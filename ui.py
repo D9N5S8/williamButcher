@@ -15,7 +15,7 @@ import streamlit as st
 import os
 import google.generativeai as genai
 
-genai.configure(api_key=os.getenv("Butcher_API_KEY"))
+genai.configure (api_key='AIzaSyCsKBsxEb95bQh31g8vbYwyu1ITsOwoJ3U')
 
 model=genai.GenerativeModel("gemini-pro") 
 chat = model.start_chat(history=[])
